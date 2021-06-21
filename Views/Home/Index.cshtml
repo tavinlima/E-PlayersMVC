@@ -1,10 +1,217 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+        <section id="inicio" class="banner_principal">
+            <div class="conteudo_banner">
+                <h1>Liga E-Players</h1>
+                <span>O maior portal de campeonatos online</span>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a class="navbar-brand" asp-area="" asp-controller="Equipe" asp-action="Index">Equipes</a>
-    <a class="navbar-brand" asp-area="" asp-controller="Jogador" asp-action="Index">Jogadores</a>
-</div>
+                <a class="cadastre_se_jogador" asp-area="" asp-controller="Jogador" asp-action="Index">cadastrar jogador</a>
+                <a class="cadastre_time" asp-area="" asp-controller="Equipe" asp-action="Index">cadastrar time</a>
+            </div>
+        </section>
+
+        <section class="box_jogos">
+            <div class="container jogos">
+                <img src="/assets/super_smash_bros_logo.png" alt="logo_super_smash_bros">
+                <img src="/assets/logo-lol.png" alt="logo_league_of_legends">
+                <img src="/assets/Counter-Strike-Logo.png" alt="logo_counter_strike">
+                <img src="/assets/valorant-logo.png" alt="logo_valorant">
+                <img src="/assets/FIFA_logo.png" alt="logo_fifa">
+            </div>
+        </section>
+
+        <section id="campeonato" class="box_participar_ligas">
+            <div class="retangulo_preto">
+                <div class="container conteudo_participar_ligas">
+                    <h2>Como participar das ligas?</h2>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia ce receita de bolis, mais
+                        bolis eu
+                        num gostis. Quem manda na minha terra sou euzis! Paisis, filhis, espiritis santis. Mauris nec
+                        dolor in
+                        eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. </p>
+
+                    <p>Casamentiss faiz malandris se pirulitá. Per aumento de cachacis, eu reclamis. Aenean aliquam
+                        molestie
+                        leo, vitae iaculis nisl. Suco de cevadiss deixa as pessoas mais interessantis.</p>
+                </div>
+            </div>
+            <img src="/assets/img_ezreal_ligas.png" alt="personagem_lol">
+        </section>
+
+        <section id="resultados" class="partidas">
+            <div class="container conteudo_partidas">
+
+                <span class="ao_vivo">ao vivo</span>
+                <div class="container_partidas">
+                    <span>sk</span>
+                    <img src="/assets/sk-logo.png">
+                    <span>vs</span>
+                    <img src="/assets/fla-logo.png">
+                    <span>sk</span>
+                </div>
+
+                <div class="line"></div>
+
+                <span class="em_breve">em breve</span>
+                <div class="container_partidas">
+
+                    <span>sk</span>
+                    <img src="/assets/sk-logo.png">
+                    <span>vs</span>
+                    <img src="/assets/fla-logo.png">
+                    <span>sk</span>
+                </div>
+                <div class="container_partidas">
+                    <span>sk</span>
+                    <img src="/assets/sk-logo.png">
+                    <span>vs</span>
+                    <img src="/assets/fla-logo.png">
+                    <span>sk</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="noticias_e_jogos">
+            <div class="container container_noticias_e_jogos">
+                <section id="noticias" class="container container_noticias">
+                    <h2>notícias</h2>
+                    <div class="posicionamento">
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+
+                        <article class="noticia">
+                            <img src="/assets/player.jpg">
+                            <h3>título da notícia</h3>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Atirei o pau
+                                no
+                                gatis,
+                                per gatis num morreus. </p>
+                        </article>
+                    </div>
+
+                </section>
+
+
+                <section id="horarios" class="container container_proximos_jogos">
+
+                    <h2>próximos jogos</h2>
+
+                    <section class="conteudo_proximos_jogos">
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+
+                        <div class=container_conteudo_proximos_jogos>
+                            <div class="proximos_jogos">
+                                <span>sk</span>
+                                <img src="/assets/sk-logo.png">
+                                <span>vs</span>
+                                <img src="/assets/fla-logo.png">
+                                <span>sk</span>
+                            </div>
+                            <span>01/12/2020 19:00</span>
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+
+        </section>
+

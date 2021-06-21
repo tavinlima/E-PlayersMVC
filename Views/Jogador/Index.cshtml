@@ -2,35 +2,49 @@
 @{
     ViewData["Title"] = "Jogadores";
 }
-<form method="POST" action='@Url.Action("Cadastrar")'>
-    <label>ID Jogador</label>
-    <input type="text" name="IdJogador">
 
-    <label>Nome Jogador</label>
-    <input type="text" name="NomeJogador">
+<section class="banner_cadastro_jogador">
+    <h2>Cadastro de Jogador</h2>
+</section>
 
-    <label>ID Equipe</label>
-    <input type="text" name="IdEquipe">
+<section class="box_cadastro_lista">
+    <section class="box_cadastro_jogador">
+        <form method="POST" action='@Url.Action("Cadastrar")' class="dados_jogador">
+            <label>ID Jogador</label>
+            <input type="text" name="IdJogador">
 
-    <button type="submit">Cadastrar</button>
-</form>
+            <label>Nome Jogador</label>
+            <input type="text" name="NomeJogador">
 
-<table class="table table-striped table-responsive">
-    <thead>
-        <th>ID de jogador</th>
-        <th>Nome de jogador</th>
-        <th>ID da equipe</th>
-    </thead>
+            <label>ID Equipe</label>
+            <input type="text" name="IdEquipe">
 
-    <tbody>
-        @foreach (Jogador item in ViewBag.Jogadores)
-        {
-            <tr>
-                <td>@item.IdJogador</td>
-                <td>@item.Nome</td>
-                <td>@item.IdEquipe</td>
-                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@item.IdJogador">Excluir</a></td>
-            </tr>
-        }
-    </tbody>
-</table>
+            <button class="cadastrar_jogador" type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section class="lista_jogadores">
+        <table>
+            <thead>
+                <th>ID de jogador</th>
+                <th>Nome de jogador</th>
+                <th>ID da equipe</th>
+                <th></th>
+            </thead>
+
+            <tbody>
+                @foreach (Jogador item in ViewBag.Jogadores)
+                {
+                    <tr>
+                        <td>@item.IdJogador</td>
+                        <td>@item.Nome</td>
+                        <td>@item.IdEquipe</td>
+                        <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
+                            asp-route-id="@item.IdJogador">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>
+</section>

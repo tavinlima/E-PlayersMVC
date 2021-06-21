@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90vw;
+    height: unset;
+    /* background-color:blue; */
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1E1C21;
+    width: 100%;
+    height: 4.5vw;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5vw;
+}
+
+.container_header img{
+    width: 12vw;
+    margin-right: 50px;
+}
+
+.header_nav{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 788px;
+    font-size: 1.5vw;
+}
+
+.header_nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn_menu{
+    display: none;
+}
+
+main{
+    margin-top: 4.5vw;
+}
+
+.banner_principal {
+    background-image: url(..//assets/Banner_inicio_greninja.png);
+    height: 700px;
+    width: 100%;
+    background-position: center;
+}
+
+.conteudo_banner{
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    /* margin: 0; */
+    padding: 150px 35px;
+}
+h1{
+    font-size: 7vw;
+}
+
+.conteudo_banner span{
+    font-size: 4vw;
+}
+
+.cadastre_se_jogador{
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #E56E0E;
+    /* background-color: black; */
+    width: 188px;
+    padding: 11px 29px;
+    margin: 35px 167px;
+    border-radius: 10px;
+    border: none;
+}
+
+.cadastre_time{
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #0721B4;
+    /* background-color: black; */
+    width: 188px;
+    padding: 11px 29px;
+    margin: 35px 167px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* .conteudo_banner div{
+    background-color: #0721B4;
+    /* background-color: black; */
+    /* width: 188px;
+    height: 58px;
+    padding: 11px 29px;
+    margin: 35px 167px;
+    border-radius: 10px;
+} */ 
+
+.box_jogos{
+    background-color:black;
+}
+
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.jogos img{
+    width: 10vw;
+}
+
+.box_participar_ligas{
+    /* position: relative; */
+    height: 588px;
+    background-image: url(..//assets/Descrição.png);
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    background-position: center;
+}
+
+.retangulo_preto{
+    position: relative;
+    display: flex;
+    /* object-fit: cover; */
+    background-color: #000000;
+    width: 100%;
+    /* transform: rotate(-15deg); */
+    clip-path: polygon(100% 0, 100% 71%, 0 100%, 0 20%);
+    /* clip-path: polygon(0 33%, 100% 19%, 100% 57%, 0 71%); */
+}
+
+
+.conteudo_participar_ligas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    width: 36vw;
+    margin-left: 5vw;
+}
+
+.conteudo_participar_ligas h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    width: 36vw;
+    margin-bottom: 5px;
+    text-justify: none;
+}
+
+.conteudo_participar_ligas p{
+    margin-top: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 36vw;
+}
+
+.box_participar_ligas img{
+    position: absolute;
+    margin-left: 41%;
+    margin-top: 92px;
+    width: 111.1vh;
+    /* height: 76.5%; */
+    /* background-color: aqua; */
+} 
+
+.partidas{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.conteudo_partidas{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.container_partidas{
+    display: flex;
+    align-items: center;
+}
+
+.ao_vivo{
+    width: 50px;
+}
+
+.em_breve{
+    width: 50px;
+}
+
+.partidas span{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    margin: 0 5px;
+    /* padding: 15px 0; */
+}
+
+.line{
+    background-color:#ffffff;
+    width: 1px;
+    height: 54px;
+    /* margin-top: 8px; */
+}
+
+.noticias_e_jogos{
+    display: flex;
+    background-color: #1E1C21;
+    justify-content: space-around;
+    /* margin-bottom: 5px; */
+}
+
+.noticias_e_jogos h2{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.container_noticias_e_jogos{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container_noticias{
+    /* width: 688px; */
+    margin: 0;
+}
+
+.posicionamento{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20%;
+}
+
+.noticia{
+    width: 15vw;
+    height: 30vw;
+    margin-bottom: 5px;
+    /* background-color: #000000; */
+    background: -webkit-linear-gradient(top, rgba(5,5,5,1) 0%, rgba(9,9,9,1) 0%, rgba(9,9,9,1) 0%, rgba(54,54,54,1) 28%, rgba(54,54,54,1) 49%, rgba(54,54,54,1) 50%, rgba(54,54,54,1) 67%, rgba(5,5,5,1) 100%);
+    margin: 20px 0px;
+    box-shadow: 0px 6px 21px 15px rgba(0,0,0,0.75);
+}
+
+.noticia img{
+    width: 15vw;
+    height: auto;
+}
+
+.noticia h3{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 10px;
+}
+
+.noticia p{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 10px;
+    font-size: 1.1vw;
+}
+
+.container_proximos_jogos{
+    width: 20vw;
+    margin: 0;
+}
+
+.proximos_jogos h2{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: capitalize;
+}
+
+.conteudo_proximos_jogos{
+    width: 20vw;
+    height: 64vw;
+    /* background-color: #000000; */
+    background: -webkit-linear-gradient(top, rgba(5,5,5,1) 0%, rgba(9,9,9,1) 0%, rgba(9,9,9,1) 0%, rgba(54,54,54,1) 17%, rgba(54,54,54,1) 49%, rgba(54,54,54,1) 50%, rgba(54,54,54,1) 80%, rgba(5,5,5,1) 100%);
+    padding: 16px 53px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 6px 21px 15px rgba(0,0,0,0.75);
+}
+
+.container_conteudo_proximos_jogos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16vw;
+    font-size: 1.3vw;
+}
+
+.proximos_jogos{
+    display: flex;
+    align-items: center;
+}
+
+.proximos_jogos span{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.conteudo_proximos_jogos span{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer{
+    background-color: black;
+    height: 240px;
+} 
+
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 240px;
+}
+
+.container_footer a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.container_footer span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    /* text-transform: capitalize; */
+}
+
+.links_uteis{
+    list-style-type: disc;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: 40px;
+    list-style-position: inside;
+} 
+
+.paginas{
+    list-style-type: disc;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-top: 40px;
+    list-style-position: inside;
+}
+
+.container_footer img{
+    width: 16vw;
+}
+
+.logo_e_players{
+    margin: 0 12vw;
+}
+
+.container_email_sociais{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 18vw;
+}
+
+.newsletter{
+    width: auto;
+    height: 4vw;
+}
+
+.newsletter_cadastro{
+    display: flex;
+}
+
+.newsletter input{
+    height: 30px;
+}
+
+.newsletter button{
+    width: 38%;
+    background-color: #0721B4;
+    color:#ffffff;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border-style: none;
+    height: 30px;
+}
+
+.container_siga_nos{
+    margin-top:5px;
+    width: 20vw;
+    height: 5vw;
+    display:flex;
+    align-items: center;
+}
+
+.container_siga_nos img{
+    width: 3vw;
+    margin: 0 5px;
+}
+
+.banner_cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//assets/Banner_cadastro_de_times.png);
+    height: 17.3vw;
+    background-repeat: no-repeat;
+}
+
+.banner_cadastro h2{
+    font-family: 'Titillium Web', sans-serif;
+    color:#ffffff;
+    font-size: 8vw;
+}
+
+.box_cadastro_lista{
+    background-color: #1E1C21;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_cadastro_times{
+    background-color: #000000;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 51%, rgba(83,83,83,1) 54%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 6px 21px 15px rgba(0,0,0,0.75);
+    width: 80vw;
+    height: 340px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7%;
+}
+
+.dados_time{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dados_time label{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.dados_time input{
+    /* background-color: #ABABAB; */
+    height: 30px;
+    border: none; 
+}
+
+.nome_equipe{
+    background-color: #ABABAB;
+    border: none;
+}
+
+#emblema{
+    background-color: #ABABAB;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrar_time{
+    width: 257px;
+    font-family: 'Roboto', sans-serif;
+    width: 18vw;
+    height: 3vw;
+    margin: 30px 23vw;
+    background-color: #0721B4;
+    color: #ffffff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+}
+
+.lista_times{
+    font-family: 'Titillium Web', sans-serif;
+    color:#ffffff;
+    margin: 50px 0;
+}
+
+.lista_times table{
+    width: 80vw;
+    height: 180px;
+    border :#ffffff;
+    border-style: solid;
+    border-spacing: 0;
+}
+
+
+.lista_times tr{
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista_times th{
+    background-color: #000000;
+    height: 40px;
+    border-bottom: solid #ffffff;
+    border-radius: 1px;
+}
+
+.banner_cadastro_jogador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//assets/banner_cadastro_jogador.png);
+    background-position: right;
+    height: 17.3vw;
+    background-repeat: no-repeat;
+}
+
+.banner_cadastro_jogador h2{
+    font-family: 'Titillium Web', sans-serif;
+    color:#ffffff;
+    font-size: 8vw;
+}
+
+.box_cadastro_jogador{
+    background-color: #000000;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(83,83,83,1) 51%, rgba(83,83,83,1) 54%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 6px 21px 15px rgba(0,0,0,0.75);
+    width: 80vw;
+    height: 450px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7%;
+}
+
+.dados_jogador{
+    display: flex;
+    flex-direction: column;
+}
+
+.dados_jogador label{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.dados_jogador input{
+    background-color: #ABABAB;
+    height: 30px;
+    width: 100%;
+    border: none;
+}
+
+.dados_jogadores{
+    height: 15vw;
+}
+
+.dados_jogador select{
+    background-color: #ABABAB;
+    height: 30px;
+    border: none;
+
+}
+
+.cadastrar_jogador{
+    width: 257px;
+    font-family: 'Roboto', sans-serif;
+    width: 18vw;
+    height: 3vw;
+    margin: 30px 23vw;
+    background-color: #E56E0E;
+    color: #ffffff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+}
+
+#equipes{
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista_jogadores{
+    font-family: 'Titillium Web', sans-serif;
+    color:#ffffff;
+    margin: 50px 0;
+}
+
+.lista_jogadores table{
+    width: 80vw;
+    height: 180px;
+    border: #ffffff;
+    border-style: solid;
+    border-spacing: 0;
+}
+
+.lista_jogadores th{
+    background-color: black;
+    height: 40px;
+    border-bottom: solid #ffffff;
+    border-radius: 1px;
+}
+
+@media only screen and (max-device-width : 768px){
+    .container{
+        width:  80vw;
+    }
+
+    header{
+        height: 10vw;
+    }
+
+    .container_header{
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header_nav{
+        display: none;
+        height: 300px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: black;
+    }
+
+    .btn_menu{
+        display: inline-block;
+    }
+
+    .btn_menu i{
+        color:white;
+        font-size: 30px;
+    }
+
+    .banner_principal{
+        background-image: url(..//assets/banner_inicio_responsivo.png);
+        background-position: center;
+    }
+
+    .conteudo_banner{
+        align-items: center;
+        padding: 210px 35px;
+    }
+
+    .conteudo_banner button{
+        width: 40vw;
+        height: 12vw;
+        font-size: 3vw;
+    }
+
+    .conteudo_participar_ligas{
+        margin-top: 185px;
+        margin-left: 20vw;
+        margin-right: 30vw;
+        align-items: center;
+    }
+
+    .conteudo_participar_ligas h2{
+        width: 60vw;
+    }
+
+    .conteudo_participar_ligas p{
+        width: 60vw;
+    }
+
+    .box_participar_ligas img{
+        /* width: 70vw;
+        margin-left: 32%;
+        margin-top: 22.1vh; */
+        display: none;
+    }
+
+    .partidas{
+        height: 100vw;
+    }
+
+    .conteudo_partidas{
+        height: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_partidas{
+        margin: 30px 0;
+    }
+
+    .ao_vivo{
+        width: 22vw;
+        font-size: 6vw;
+    }
+
+    .em_breve{
+        width: 28vw;
+        font-size: 6vw;
+    }
+
+    .container_noticias_e_jogos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_noticias_e_jogos h2{
+        font-size: 5vw;
+    }
+
+    .container_noticias_e_jogos h2 {
+        font-size: 6vw;
+    }
+
+    .container_noticias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .posicionamento{
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .noticia{
+        width: 22vw;
+        height: 40vw;
+    }
+
+    .noticia img {
+        width: 22vw;
+    }
+
+    .noticia p{
+        font-size: 2vw;
+    }
+
+    .container_proximos_jogos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo_proximos_jogos {
+        width: 40vw;
+        height: 80vw;
+    }
+
+    .conteudo_proximos_jogos span{
+        font-size: 2vw;
+    }
+
+    footer{
+        height: 100vw;
+    }
+
+    .container_footer{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container_footer span{
+        font-size: 15px;
+    }
+
+    .logo_e_players{
+        width: 40vw;
+    }
+
+    .container_email_sociais{
+        flex-direction: unset;
+        width: 77vw;
+    }
+
+    .container_siga_nos{
+        width: 33vw;
+    }
+
+}

@@ -1,48 +1,88 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EPlayersMVC</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/4ae9ddea7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/estilo.css" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EPlayersMVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="container container_header">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="/assets/logo.svg" alt="logo_e-players">
+            </a>
+            <nav id="links" class="header_nav">
+                <a asp-area="" asp-controller="Home" asp-action="Index" onclick="BotaoDoMenu()">início</a>
+                <a href="#horarios" onclick="BotaoDoMenu()">horários</a>
+                <a href="#campeonato" onclick="BotaoDoMenu()">campeonato</a>
+                <a href="#resultados" onclick="BotaoDoMenu()">resultados</a>
+                <a href="#noticias" onclick="BotaoDoMenu()">noticias</a>
+            </nav>
+            <a class="btn_menu" href="javascript:void(0)" onclick="BotaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
     </header>
-    <div class="container">
+
+    <div class>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - EPlayersMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+        <section class="container container_footer">
+            <div class="links_footer">
+                <ul class="links_uteis">
+                    <span>Links úteis</span>
+                    <li><a href="#">Regras de utilização</a></li>
+                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="páginas_footer">
+                <ul class="paginas">
+                    <span>Páginas</span>
+                    <li> <a href="#inicio">Início</a> </li>
+                    <li> <a href="#campeonato">Campeonatos</a> </li>
+                    <li> <a href="#resultados">Resultados</a> </li>
+                    <li> <a href="#noticias">Notícias</a> </li>
+                    <li> <a href="#login">Login/Cadastro</a> </li>
+                </ul>
+            </div>
+
+            <img class="logo_e_players" src="/assets/logo.svg" alt="logo e-players">
+
+            <div class="container_email_sociais">
+                <div class="newsletter">
+                    <span>Faça parte do nosso clan, assine nossa newsletter!</span>
+                    <div class=newsletter_cadastro>
+                        <input type="email">
+                        <button>Cadastrar</button>
+                    </div>
+                </div>
+
+                <div class="container_siga_nos">
+                    <span>Siga-nos em:</span>
+                    <img src="/assets/instagram.png" alt="logo instagram">
+                    <img src="/assets/facebook.png" alt="logo facebook">
+                    <img src="/assets/youtube.png" alt="logo youtube">
+                </div>
+            </div>
+        </section>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
