@@ -40,3 +40,4 @@ C:\Users\Dell\Desktop\EPlayersMVC\obj\Debug\net5.0\EPlayersMVC.pdb
 C:\Users\Dell\Desktop\EPlayersMVC\obj\Debug\net5.0\EPlayersMVC.genruntimeconfig.cache
 C:\Users\Dell\Desktop\EPlayersMVC\obj\Debug\net5.0\EPlayersMVC.csproj.CopyComplete
 C:\Users\Dell\Desktop\EPlayersMVC\obj\Debug\net5.0\Razor\Views\Jogador\Index.cshtml.g.cs
+C:\Users\Dell\Desktop\EPlayersMVC\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs

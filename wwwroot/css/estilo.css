@@ -50,6 +50,21 @@ header{
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
+.header_nav li{
+    list-style-type: none;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.erro{
+    width: 306px;
+    color: #ff0000;
+    text-transform: uppercase;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+}
 
 .btn_menu{
     display: none;
@@ -92,7 +107,7 @@ h1{
     text-transform: uppercase;
     background-color: #E56E0E;
     /* background-color: black; */
-    width: 188px;
+    width: 255px;
     padding: 11px 29px;
     margin: 35px 167px;
     border-radius: 10px;
@@ -107,8 +122,8 @@ h1{
     text-transform: uppercase;
     background-color: #0721B4;
     /* background-color: black; */
-    width: 188px;
-    padding: 11px 29px;
+    width: 255px;
+    padding: 11px 48px;
     margin: 35px 167px;
     border-radius: 10px;
     border: none;
@@ -539,7 +554,7 @@ footer{
 
 .lista_times table{
     width: 80vw;
-    height: 180px;
+    height: 55px;
     border :#ffffff;
     border-style: solid;
     border-spacing: 0;
@@ -556,6 +571,10 @@ footer{
     height: 40px;
     border-bottom: solid #ffffff;
     border-radius: 1px;
+}
+
+.lista_times td{
+    padding: 0 114px;
 }
 
 .banner_cadastro_jogador{
@@ -653,8 +672,29 @@ footer{
 .lista_jogadores th{
     background-color: black;
     height: 40px;
+    width: 75px;
     border-bottom: solid #ffffff;
     border-radius: 1px;
+}
+
+.lista_jogadores td{
+    padding: 0 70px;
+}
+
+.banner_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//assets/wallpaperlogin.jpg);
+    background-position: right;
+    height: 17.3vw;
+    background-repeat: no-repeat;
+}
+
+.banner_login h2{
+    font-family: 'Titillium Web', sans-serif;
+    color:#ffffff;
+    font-size: 8vw;
 }
 
 @media only screen and (max-device-width : 768px){

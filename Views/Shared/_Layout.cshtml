@@ -17,11 +17,22 @@
                 <img src="/assets/logo.svg" alt="logo_e-players">
             </a>
             <nav id="links" class="header_nav">
-                <a asp-area="" asp-controller="Home" asp-action="Index" onclick="BotaoDoMenu()">início</a>
-                <a href="#horarios" onclick="BotaoDoMenu()">horários</a>
-                <a href="#campeonato" onclick="BotaoDoMenu()">campeonato</a>
-                <a href="#resultados" onclick="BotaoDoMenu()">resultados</a>
-                <a href="#noticias" onclick="BotaoDoMenu()">noticias</a>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" onclick="BotaoDoMenu()">início</a></li>
+                <li><a href="#horarios" onclick="BotaoDoMenu()">horários</a></li>
+                <li><a href="#campeonato" onclick="BotaoDoMenu()">campeonato</a></li>
+                <li><a href="#resultados" onclick="BotaoDoMenu()">resultados</a></li>
+                <li><a href="#noticias" onclick="BotaoDoMenu()">noticias</a></li>
+
+                @if (ViewBag.UserName != null)
+                {
+                    <li style="color: #d5379b">Olá, @ViewBag.UserName!</li>
+                    <li><a asp-controller="Login" asp-action="Logout">SAIR</a></li>
+                }
+                else
+                {
+                    <li><a asp-controller="Login" asp-action="Index" title="voltar para a página inicial">LOGIN</a></li>
+                }
+
             </nav>
             <a class="btn_menu" href="javascript:void(0)" onclick="BotaoDoMenu()">
                 <i class="fas fa-bars"></i>
@@ -50,7 +61,7 @@
             <div class="páginas_footer">
                 <ul class="paginas">
                     <span>Páginas</span>
-                    <li> <a href="#inicio">Início</a> </li>
+                    <li> <a asp-area="" asp-controller="Home" asp-action="Index" >Início</a> </li>
                     <li> <a href="#campeonato">Campeonatos</a> </li>
                     <li> <a href="#resultados">Resultados</a> </li>
                     <li> <a href="#noticias">Notícias</a> </li>
