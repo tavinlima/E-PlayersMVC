@@ -50,6 +50,11 @@ header{
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
+
+.header_nav a:hover{
+    color: gray;
+}
+
 .header_nav li{
     list-style-type: none;
     color: #ffffff;
