@@ -13,6 +13,7 @@ namespace EPlayersMVC.Controllers
         public IActionResult Index()
         {
             ViewBag.Jogadores = jogadorModel.LerTodos();
+            ViewBag.UserName = HttpContext.Session.GetString("_UserName");
             return View();
         }
 
@@ -35,6 +36,7 @@ namespace EPlayersMVC.Controllers
         public IActionResult Excluir(int id){
             jogadorModel.Deletar(id);
             ViewBag.Jogadores = jogadorModel.LerTodos();
+            HttpContext.Session.Remove("_UserName");
 
             return LocalRedirect("~/Jogador/Listar");
         }

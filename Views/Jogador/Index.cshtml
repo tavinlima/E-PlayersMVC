@@ -47,9 +47,12 @@
                         <td>@item.Nome</td>
                         <td>@item.IdEquipe</td>
                         <td>@item.Email</td>
-                        <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
+                        @if (item.Nome == ViewBag.UserName)
+                        {
+                            <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir"
                             asp-route-id="@item.IdJogador">Excluir</a>
-                        </td>
+                            </td>
+                        }
                     </tr>
                 }
             </tbody>
